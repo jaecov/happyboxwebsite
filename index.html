@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Box Cakeshop</title>
+    <meta name="description" content="Freshly baked cakes, cupcakes, and treats. Custom designs, same-day pickup when available." />
+    <meta name="theme-color" content="#ff6aa2" />
+
+    <meta property="og:title" content="Happy Box Cakeshop" />
+    <meta property="og:description" content="Freshly baked cakes, cupcakes, and treats." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/cake-hero.svg" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <header class="site-header">
+      <div class="container row between center">
+        <a class="brand" href="#top" aria-label="Happy Box Cakeshop home">
+          <img class="logo" src="assets/favicon.svg" alt="Happy Box logo" />
+          <span>Happy Box</span>
+        </a>
+        <nav class="nav">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#visit">Visit</a>
+          <a class="btn btn-primary" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container grid-2">
+          <div class="hero-copy">
+            <h1>Sweet Moments, Baked Fresh Daily</h1>
+            <p>From classic birthdays to custom creations, our cakes are crafted with real ingredients and lots of love.</p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#menu">Browse Menu</a>
+              <a class="btn btn-ghost" href="#contact">Order/Enquire</a>
+            </div>
+            <ul class="badges">
+              <li>Made to order</li>
+              <li>Eggless options</li>
+              <li>Local pickup</li>
+            </ul>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <img src="assets/cake-hero.svg" alt="Decorated cake illustration" />
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="container">
+          <h2 class="section-title">Our Menu</h2>
+          <p class="section-intro">A few of our favorites — ask us about custom flavors and designs.</p>
+
+          <div class="cards-grid">
+            <article class="card">
+              <img src="assets/cake-slice.svg" alt="Chocolate Fudge Cake" />
+              <div class="card-body">
+                <h3>Chocolate Fudge</h3>
+                <p>Rich cocoa sponge with silky ganache.</p>
+                <div class="price">From $29</div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/cake-slice-berry.svg" alt="Strawberry Cream Cake" />
+              <div class="card-body">
+                <h3>Strawberry Cream</h3>
+                <p>Vanilla layers with fresh strawberry filling.</p>
+                <div class="price">From $32</div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/cupcake.svg" alt="Assorted Cupcakes" />
+              <div class="card-body">
+                <h3>Assorted Cupcakes</h3>
+                <p>Mix & match flavors with buttercream.</p>
+                <div class="price">6 for $18</div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/cake-slice.svg" alt="Red Velvet Cake" />
+              <div class="card-body">
+                <h3>Red Velvet</h3>
+                <p>Classic red velvet with cream cheese frosting.</p>
+                <div class="price">From $34</div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/cookie.svg" alt="Cookies" />
+              <div class="card-body">
+                <h3>Cookies</h3>
+                <p>Soft-baked chocolate chip and seasonal picks.</p>
+                <div class="price">From $10</div>
+              </div>
+            </article>
+            <article class="card">
+              <img src="assets/cake-slice-berry.svg" alt="Lemon Blueberry Cake" />
+              <div class="card-body">
+                <h3>Lemon Blueberry</h3>
+                <p>Bright lemon layers with blueberry compote.</p>
+                <div class="price">From $33</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="note">Looking for something special? We love custom designs!</div>
+
+          <div class="fb-embed" aria-label="Facebook timeline">
+            <div class="fb-page" data-href="https://www.facebook.com/thehappyboxmla" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/thehappyboxmla" class="fb-xfbml-parse-ignore">
+                <a href="https://www.facebook.com/thehappyboxmla">The Happy Box Manila</a>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">About Us</h2>
+            <p>We’re a small, family-run bakery focused on quality ingredients and beautiful finishes. Every cake is made fresh, never frozen.</p>
+            <p>Whether you want a classic birthday cake or a bespoke wedding centerpiece, we’ll bake it to delight.</p>
+          </div>
+          <div class="about-card">
+            <ul>
+              <li><strong>Hours:</strong> Tue–Sun, 9:00–18:00</li>
+              <li><strong>Lead time:</strong> 2–4 days for custom orders</li>
+              <li><strong>Dietary:</strong> Eggless and low-sugar options</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">Visit Us</h2>
+            <p>123 Baker Street, Sweet City, SC 00000</p>
+            <p>Parking available on-site. Pickup window for pre-orders.</p>
+            <div class="cta-row">
+              <a class="btn btn-ghost" href="https://maps.google.com/?q=123%20Baker%20Street%20Sweet%20City" target="_blank" rel="noopener">Open in Maps</a>
+            </div>
+          </div>
+          <div class="map-placeholder" aria-hidden="true">
+            <img src="assets/map.svg" alt="Map placeholder" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-cards">
+            <a class="contact-card" href="mailto:hello@happybox.example">
+              <img src="assets/icon-email.svg" alt="Email" />
+              <div>
+                <div class="label">Email</div>
+                <div class="value">hello@happybox.example</div>
+              </div>
+            </a>
+            <a class="contact-card" href="tel:+15551234567">
+              <img src="assets/icon-phone.svg" alt="Phone" />
+              <div>
+                <div class="label">Call</div>
+                <div class="value">+1 (555) 123‑4567</div>
+              </div>
+            </a>
+            <a class="contact-card" href="https://wa.me/15551234567?text=Hi%20Happy%20Box!%20I%27d%20like%20to%20order%20a%20cake." target="_blank" rel="noopener">
+              <img src="assets/icon-chat.svg" alt="Chat" />
+              <div>
+                <div class="label">WhatsApp</div>
+                <div class="value">Message us to order</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container row between center">
+        <div class="muted">© <span id="year"></span> Happy Box Cakeshop</div>
+        <div class="muted">Made with ♥ near you</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
+  </body>
+  </html>

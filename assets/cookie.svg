@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" rx="24" fill="#fffaf2"/>
+  <g transform="translate(160 120)">
+    <circle cx="160" cy="120" r="96" fill="#f3c892"/>
+    <g fill="#8b5e3c">
+      <circle cx="128" cy="104" r="10"/>
+      <circle cx="176" cy="84" r="8"/>
+      <circle cx="200" cy="124" r="9"/>
+      <circle cx="148" cy="150" r="7"/>
+      <circle cx="188" cy="168" r="6"/>
+    </g>
+  </g>
+</svg>
+
