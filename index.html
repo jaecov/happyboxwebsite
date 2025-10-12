@@ -137,14 +137,14 @@
         <div class="container grid-2">
           <div>
             <h2 class="section-title">Visit Us</h2>
-            <p>123 Baker Street, Sweet City, SC 00003</p>
+            <p>Biak na Bato St, Tondo, Manila, Metro Manila</p>
             <p>Parking available on-site. Pickup window for pre-orders.</p>
             <div class="cta-row">
-              <a class="btn btn-ghost" href="https://maps.google.com/?q=123%20Baker%20Street%20Sweet%20City" target="_blank" rel="noopener">Open in Maps</a>
+              <a class="btn btn-ghost" href="https://maps.app.goo.gl/6fuMSBArU5Qmodfm6" target="_blank" rel="noopener">Open in Maps</a>
             </div>
           </div>
           <div class="map-placeholder" aria-hidden="true">
-            <img src="assets/map.svg" alt="Map placeholder" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15442.423808996195!2d120.98289422848683!3d14.6215093459065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b509eb32ad83%3A0x3b48f476dbdfe6b2!2sThe%20Happy%20Box%20MLA!5e0!3m2!1sen!2sph!4v1760299747622!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
@@ -153,25 +153,25 @@
         <div class="container">
           <h2 class="section-title">Contact</h2>
           <div class="contact-cards">
-            <a class="contact-card" href="mailto:hello@happybox.example">
+            <a class="contact-card" href="mailto:thehappyboxmla@outlook.com">
               <img src="assets/icon-email.svg" alt="Email" />
               <div>
                 <div class="label">Email</div>
-                <div class="value">hello@happybox.example</div>
+                <div class="value">thehappyboxmla@outlook.com</div>
               </div>
             </a>
-            <a class="contact-card" href="tel:+15551234567">
+            <a class="contact-card" href="tel:+639338611130">
               <img src="assets/icon-phone.svg" alt="Phone" />
               <div>
                 <div class="label">Call</div>
-                <div class="value">+1 (555) 123‑4567</div>
+                <div class="value">+639338611130</div>
               </div>
             </a>
-            <a class="contact-card" href="https://wa.me/15551234567?text=Hi%20Happy%20Box!%20I%27d%20like%20to%20order%20a%20cake." target="_blank" rel="noopener">
-              <img src="assets/icon-chat.svg" alt="Chat" />
+            <a class="contact-card" href="https://m.me/thehappyboxmla" target="_blank" rel="noopener">
+              <img src="assets/icon-messenger.svg" alt="Messenger" />
               <div>
-                <div class="label">WhatsApp</div>
-                <div class="value">Message us to order</div>
+                <div class="label">Messenger</div>
+                <div class="value">Send us a message</div>
               </div>
             </a>
           </div>
@@ -188,6 +188,24 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute('page_id', '454679978049245');
+      chatbox.setAttribute('attribution', 'page_inbox');
+      chatbox.setAttribute('theme_color', '#ff6aa2');
+      window.fbAsyncInit = function() {
+        FB.init({ xfbml: true, version: 'v20.0' });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
     </script>
   </body>
   </html>
