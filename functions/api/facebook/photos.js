@@ -4,7 +4,7 @@ export async function onRequest({ request, env }) {
     const limit = Math.min(Math.max(Number(url.searchParams.get('limit') || 10), 1), 25);
 
     const PAGE_ID = 454679978049245;
-    const TOKEN = 'EAAL9ZCnS1ZAt0BPnrD24SqHMtEQ5gtzXmqE0vWQEQZCd0XEXpsRNhe0nU98aVLw1KQLoVOeYZA7N7abuYPclUrfDXceO5kZCL9uFsZClVttSCe8gCdOwZBzUGS6HH3ViEknoXI4VMiJ1vJ6uAm2mmSaEZCXCft982DSXpFjkaIxXQSMp7PJ4ekhIy50JzLyvIwVbvvSvtsyegZC3QADCMZAjIwxRoZCj7DpuH6QjgZDZD';
+    const TOKEN = 'EAAL9ZCnS1ZAt0BPt9YOp6Ta6Ahgw4AcqFfZAOR1nTfEfnIQ0N40aYw6Kmd08SzY8xqiwPF4OZAyUzp6lUqRZB4ZAGHNa3M1x08DcDDmZBCzzovtB9S7yTF8QlCBXMXl9U3KQnGzQqjSjwjie5dZBpZAckCIkmQpFm20gh4919XwshfGCirRO3rpEdHuNATbmnhb6plNY4ZCFrOZB6WetTU6HzLwtssQLUyqMajtS8MZCMTTsbJUZD';
 
     const baseHeaders = {
       'content-type': 'application/json; charset=UTF-8',
