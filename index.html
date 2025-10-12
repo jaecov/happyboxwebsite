@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="fb-root"></div>
     <header class="site-header">
       <div class="container row between center">
         <a class="brand" href="#top" aria-label="Happy Box Cakeshop home">
@@ -115,13 +114,14 @@
 
           <div class="note">Looking for something special? We love custom designs!</div>
 
-          <div class="fb-embed" aria-label="Facebook timeline">
-            <div class="fb-page" data-href="https://www.facebook.com/thehappyboxmla" data-tabs="timeline" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-              <blockquote cite="https://www.facebook.com/thehappyboxmla" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/thehappyboxmla">The Happy Box Manila</a>
-              </blockquote>
+          <div class="carousel" id="fb-carousel" data-limit="12" aria-label="Latest photos from Facebook">
+            <button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+            <div class="carousel-viewport">
+              <div class="carousel-track" role="list"></div>
             </div>
+            <button class="carousel-btn next" aria-label="Next">&#8250;</button>
           </div>
+          <p class="muted small" id="fb-carousel-fallback">See more on Facebook: <a href="https://www.facebook.com/thehappyboxmla" target="_blank" rel="noopener">@thehappyboxmla</a></p>
         </div>
       </section>
 
@@ -198,6 +198,7 @@
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"></script>
+    <script>window.FB_API_BASE = 'https://www.happyboxmla.com';</script>
+    <script src="app.js" defer></script>
   </body>
   </html>
