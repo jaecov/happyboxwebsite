@@ -1,6 +1,6 @@
 Happy Box Cakeshop — Static Website
 
-Overview
+Overviews
 
 - Simple, mobile-friendly static site for a cakeshop.
 - Pure HTML + CSS + SVG assets. No build step.
