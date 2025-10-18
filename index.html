@@ -25,8 +25,13 @@
           <img class="logo" src="assets/favicon-32x32.png" alt="Happy Box logo" />
           <span>Happy Box</span>
         </a>
-        <nav class="nav">
-          <a href="#menu">Menu1</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="primary-navigation" class="nav">
+          <a href="#menu">Menu</a>
           <a href="#about">About</a>
           <a href="#visit">Visit</a>
           <a class="btn btn-primary" href="#contact">Contact</a>
@@ -144,7 +149,7 @@
             </div>
           </div>
           <div class="map-placeholder" aria-hidden="true">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30887.963727111088!2d120.95884111361131!3d14.599334072898296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1760301123341!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30887.963727111088!2d120.95884111361131!3d14.599334072898296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca03571ec38b%3A0x69d1d5751069c11f!2sManila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1760301123341!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </section>
@@ -187,7 +192,23 @@
     </footer>
 
     <script>
+      // Footer year
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Mobile navigation toggle
+      const nav = document.getElementById('primary-navigation');
+      const toggle = document.querySelector('.nav-toggle');
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          const open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(open));
+        });
+        // Close menu when a link is clicked
+        nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }));
+      }
     </script>
     <div id="fb-root"></div>
     <div id="fb-customer-chat" class="fb-customerchat"></div>
