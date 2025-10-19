@@ -1,10 +1,48 @@
 /********** Template CSS **********/
 :root {
-    --primary: #EAA636;
-    --secondary: #545454;
-    --light: #FDF5EB;
-    --dark: #1E1916;
+    /* Happy Box palette inspired by logo */
+    --primary: #ff6aa2;        /* Pink scallop */
+    --primary-deep: #e14f86;   /* Deeper pink hover */
+    --brown: #5b4a43;          /* Chocolate center */
+    --cream: #fff8fb;          /* Soft cream/white */
+    --taupe: #8a7a73;          /* Muted accent */
+
+    /* Map to existing theme keys used in template */
+    --secondary: var(--taupe);
+    --light: var(--cream);
+    --dark: var(--brown);
+
+    /* Bootstrap 5 variable overrides */
+    --bs-primary: var(--primary);
+    --bs-primary-rgb: 255, 106, 162;
+    --bs-secondary: var(--secondary);
+    --bs-secondary-rgb: 138, 122, 115;
+    --bs-dark: var(--dark);
+    --bs-dark-rgb: 91, 74, 67;
+    --bs-light: var(--light);
+    --bs-light-rgb: 255, 248, 251;
 }
+
+/* Ensure Bootstrap utility classes reflect the pink brand */
+.text-primary { color: var(--primary) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.border-primary { border-color: var(--primary) !important; }
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    filter: brightness(0.92);
+}
+
+/* Align default link color to brand pink */
+a { color: var(--primary); }
+a:hover { color: var(--primary-deep); }
+
+/* Dark surfaces should be chocolate, with light text */
+.bg-dark { background-color: var(--dark) !important; }
+.text-light { color: var(--light) !important; }
 
 h4,
 h5,
@@ -405,7 +443,7 @@ h6,
 }
 
 .copyright {
-    background: #111111;
+    background: var(--dark);
 }
 
 .copyright a {
